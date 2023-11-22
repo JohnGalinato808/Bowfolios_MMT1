@@ -12,7 +12,7 @@ import { ProjectsInterests } from '../../api/projects/ProjectsInterests';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { pageStyle } from './pageStyles';
 import { PageIDs } from '../utilities/ids';
-
+import { Projects } from '../../api/projects/Projects';
 /* Returns the Profiles and Projects associated with the passed Interest. */
 function getInterestData(name) {
   const profiles = _.pluck(ProfilesInterests.collection.find({ interest: name }).fetch(), 'profile');
